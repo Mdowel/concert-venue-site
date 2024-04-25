@@ -1,0 +1,312 @@
+@font-face {
+	    src: url("braga.regular.ttf");
+	    font-family: Braga;
+}
+
+body {
+    color: #ECE9EC;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #11001C;
+}
+
+/* typography */
+
+h1 {
+    color: whitesmoke;
+    font-size: 1.75rem;
+    margin: 0;
+    font-family: "Braga", sans-serif;
+}
+
+h2 {
+    color: #ECE9EC;
+    font-size: 1.25rem;
+    margin-top: 0;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 1em 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.subheading {
+    display: block;
+    font-size: 0.75rem;
+    color: #d0aaff;
+    font-family: "Braga", sans-serif;
+    margin-top: .5em;
+}
+
+.section-two h2 {
+    color: inherit;
+}
+
+/* links */
+
+a {
+    color: #cfc06e;
+    text-decoration: underline dotted;
+}
+
+a:hover,
+a:active {
+    color: #bea30e;
+}
+
+.btn {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    border-radius: 4.6px;
+}
+
+.btn-dark {
+    color: whitesmoke;
+    background: #5f29a3;
+}
+
+.btn-mid {
+    color: #5f29a3; 
+    background: #f0e0ff; 
+}
+
+.btn-light {
+    color: #5f29a3; 
+    background: whitesmoke;
+}
+
+.btn:hover, 
+.btn:active {
+    color: #2b238a;
+    background-color: #D9BD20;
+}
+
+/* ----- LAYOUT ----- */
+
+header, 
+section, 
+footer {
+    padding: 1.25em 0;
+}
+
+header {
+    background-color: #140517;
+    border-bottom: 4px solid #725A64;
+    color: #ECE9EC;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-one-image-container {
+    display: block;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6px;
+    margin-bottom: 0.5em;
+}
+
+.section-two {
+    background-color: #725A64;
+    color: #ECE9EC;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-two-image-container {
+    gap: 1em;
+    flex: 1 0 50%;
+}
+
+.feature-image {
+    width: 100%;
+    border-radius: 0.6px;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.feature-item {
+    flex: 1 260px;
+}
+
+.connect-section .container {
+    text-align: center;
+}
+
+br {
+    display: none;
+}
+
+.connect-item {
+    margin: 1.5em 0 2em;
+}
+
+.connect-item p {
+    margin-bottom: 0;
+}
+
+.connect-item a {
+    font-size: 1.125rem;
+}
+
+hr {
+    width: 60%;
+}
+
+footer {
+    text-align: center;
+    color: #D9BD20;
+    background-color: #140517;
+    border-top: 2px solid #725A64;
+}
+
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 0.85em 0;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1.5em;
+    }
+ 
+    li:not(:last-child) {
+        border-bottom: 1px dotted #a190b6;
+    }  
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 5em;
+    }
+    
+    header,
+    section,
+    footer {
+        padding: 2.875em 0;  
+    }
+    
+    header .container,
+    nav ul {
+        display: flex;
+    }
+    
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-left: 1.25em;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .subheading {
+        font-size: 0.9rem;
+    }
+    
+    p {
+        font-size: 1.25rem;
+    }
+
+    .section-one-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    .main-image-item {
+        flex: 1 260px;
+        margin-bottom: 1em;
+
+    }
+
+    .section-two-image-container {
+        display: flex;
+    }
+
+    .feature-item {
+        flex: 0 0 500px;
+        max-width: 50%;
+        padding-right: 0.4em;
+    }
+
+    .column-one img{
+        margin-bottom: 0.5em;
+    }
+
+    .feature-item:last-child {
+        padding-right: 0;
+        max-width: 375px;
+    }
+
+    .connect-section .container {
+        display: flex;
+        justify-content: space-aroun;
+    }
+
+    .connect-item {
+        flex: 1 0 200px;
+    }
+
+    .connect-item p {
+        margin-bottom: 0.5em;
+    }
+
+    br {
+        display: block;
+    }
+
+    hr {
+        height: auto;
+        width: 0;
+        border: 1px solid #ECE9EC;
+        transform: rotate(90);
+    }
+}
