@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #11001C;
+    padding: 0;
 }
 
 /* typography */
@@ -22,9 +23,8 @@ h1 {
 h2 {
     color: #ECE9EC;
     font-size: 1.25rem;
-    margin-top: 0;
+    margin: 0;
     text-align: center;
-
 }
 
 h3 {
