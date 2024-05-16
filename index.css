@@ -153,10 +153,6 @@ header {
     text-align: center;
 }
 
-br {
-    display: none;
-}
-
 .connect-item {
     margin: 1.5em 0 2em;
 }
@@ -301,10 +297,6 @@ ul {
 
     .connect-item p {
         margin-bottom: 0.5em;
-    }
-
-    br {
-        display: block;
     }
 
     hr {
