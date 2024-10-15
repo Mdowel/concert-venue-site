@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="connect-item">
                     <p>GET CONCERT ALERTS<br>IN YOUR INBOX</p>
-                    <a href="#">Subscribe</a>
+                    <button class="subscribe-btn" id="subscribe-btn">Subscribe</button>
                 </div>
                 <hr>
                 <div class="connect-item">
@@ -74,9 +74,19 @@
                 </div>
             </div>
         </section>
+        <div class="modal" id="newsletter-modal">
+            <div class="modal-inner">
+                <span class="close-btn" id="close-btn">x</span>
+                <img class="modal-logo" src="favicon-32x32.png" alt="Royal Theater logo">
+                <p id="modal-text">Sign up to be the first to know about news, upcoming concerts, and presales!</p>
+                <input type="email" class="modal-input" id="modal-email" placeholder="email">
+                <input type="submit" class="modal-btn" id="modal-btn" Submit>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 LiveMusicForLife.com </p>
+        <p>&copy; 2024 RoyalTheater.com </p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

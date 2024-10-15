@@ -50,14 +50,24 @@ p {
 
 /* links */
 
-a {
+a,
+.subscribe-btn {
     color: #cfc06e;
     text-decoration: underline dotted;
 }
 
+.subscribe-btn {
+    background-color: transparent;
+    border: none;
+    scale: 1.25;
+}
+
 a:hover,
-a:active {
+a:active,
+.subscribe-btn:hover,
+.subscribe-btn:active {
     color: #bea30e;
+    cursor: pointer;
 }
 
 .btn {
@@ -174,6 +184,65 @@ footer {
     color: #bea30e;
     background-color: #140517;
     border-top: 2px solid #725A64;
+}
+
+.modal {
+    background-color: #f0e0ff;
+    color: #140517;
+    border-radius: 8px;
+    border: 2px solid #2b238a;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 300px;
+    max-width:calc(100% - 80px);
+    max-height:calc(100% - 80px);
+    min-width: 450px;
+}
+
+.modal-inner {
+    padding: 2em 3em;
+    font-size: 1.25rem;
+    text-align: center;
+    
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal-logo {
+    scale: 1.5;
+}
+
+.modal-inner > p {
+    text-align: start;
+    margin-bottom: 2em;
+    font-weight: 500;
+}
+
+.modal-input,
+.modal-btn {
+    padding: 5px 10px;
+}
+
+.modal-input {
+    margin-right: 5px;
+    width: 70%;
+}
+
+.modal-btn {
+    background-color: #725A64;
+    color: #ECE9EC;
+    border: 1px solid #725A64;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* ----- NAVIGATION ----- */
