@@ -23,4 +23,5 @@ Project Link: [https://royaltheater.netlify.app/](https://royaltheater.netlify.a
 ## Acknowledgments
 
 * [Font Awesome](https://fontawesome.com)
+* [Scrimba](https://scrimba.com/allcourses)
 * [Unsplash](https://unsplash.com)
